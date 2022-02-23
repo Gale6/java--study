@@ -1,6 +1,6 @@
 package oops;
 
-class Person {
+class Person extends Human{
 	
 	int age = 0;
 	String name = "";
@@ -24,8 +24,27 @@ class Person {
 		Human h1 = new Human();
 		
 		System.out.println("h1 has " + h1.eyes + " eyes");
+		h1.addition(6,7);
+		
+		
+		h1.division(5, 6);
+		
+		System.out.println(h1.getThirdEye());
+		h1.setThirdEye(5);
+		System.out.println(h1.getThirdEye());
+		
+		
+		
 		
 	}
+	public float addition(float a, float b) { //parameters
+		
+		System.out.println("adding two nums " + a + " and " + b);
+		float result = a+b;
+		System.out.println("result is " + result);
+		return result ;
+	}
+	
 	
 	
 	
