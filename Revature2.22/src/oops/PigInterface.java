@@ -3,11 +3,21 @@ package oops;
 public class PigInterface implements AnimalInterface, VeicleInterFace{
 	public static void main(String[] args) {
 		
+		String s= "hi";
+		
+		String jString = "j";
+		
 		PigInterface myPig = new PigInterface();
 		
 		myPig.honk();
 		myPig.animalSound();
 		myPig.run();
+		
+		
+		
+		AnimalInterface ani = new PigInterface();
+		
+		ani.run();
 		
 	}
 

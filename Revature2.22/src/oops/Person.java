@@ -37,10 +37,11 @@ class Person extends Human{
 		
 		
 	}
-	public float addition(float a, float b) { //parameters
+	@Override
+	public int addition(int a, int b) { //parameters
 		
 		System.out.println("adding two nums " + a + " and " + b);
-		float result = a+b;
+		int result = a+b;
 		System.out.println("result is " + result);
 		return result ;
 	}
